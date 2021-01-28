@@ -30,9 +30,6 @@ sudo systemctl enable docker
 sudo mkdir /etc/abberit/
 sudo htpasswd -b -c /etc/abberit/.htpasswd $ABBERITUSER $ABBERITPASSWORD
 
-## Prepare folder for SSL certs
-sudo mkdir /etc/letsencrypt/
-
 ## common network for all services:
 docker network create abnet
 
