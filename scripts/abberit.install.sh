@@ -12,21 +12,10 @@ then
   exit 1
 fi
 
-## setup docker log rotation
-sudo cat >/etc/docker/daemon.json <<EOL
-{
-  "log-driver": "json-file",
-  "log-opts": {
-    "max-size": "10m",
-    "max-file": "3" 
-  }
-}
-EOL
-
-## Configure docker to run as daemon
+## configure docker to run as daemon
 sudo systemctl enable docker
 
-## Add sudo user
+## add Abberit Admin Panel user
 sudo mkdir /etc/abberit/
 sudo htpasswd -b -c /etc/abberit/.htpasswd $ABBERITUSER $ABBERITPASSWORD
 
