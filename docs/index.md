@@ -6,7 +6,7 @@ To install Abberit Admin Panel on your Linux server you could follow automated i
 
 Currently automated installation is supported on Linode Linux servers.
 
-Go to Linode Manager StackScripts, navigate to Abberit StackScript of your choice and follow UX prompts to install it automatically.
+Navigate to [Abberit StackScript on Linode](https://cloud.linode.com/stackscripts/745522), click the button "Deploy New Linode" and follow UX prompts to install Abberit Admin Panel automatically.
 
 ## Manual installation
 

@@ -12,8 +12,20 @@ then
   exit 1
 fi
 
+echo 'Checking docker is installed'
+docker -v
+if [[ "$?" != "0" ]]
+then 
+  echo 'Error: not found docker installed, exiting'
+  exit 1
+fi
+
 ## configure docker to run as daemon
 sudo systemctl enable docker
+
+## install htpasswd utility as part of apache2-utils
+sudo apt-get update
+sudo apt-get install -y apache2-utils
 
 ## add Abberit Admin Panel user
 sudo mkdir /etc/abberit/
@@ -22,7 +34,7 @@ sudo htpasswd -b -c /etc/abberit/.htpasswd $ABBERITUSER $ABBERITPASSWORD
 ## common network for all services:
 docker network create abnet
 
-docker pull abberit/ab-dev:0.1.7
+docker pull abberit/ab-dev:1.0.0
 docker run \
   -d \
   --restart unless-stopped \
@@ -31,7 +43,7 @@ docker run \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v /ab/sites/:/ab/sites \
   -v /etc/abberit/.htpasswd:/etc/abberit/.htpasswd \
-  abberit/ab-dev:0.1.7
+  abberit/ab-dev:1.0.0
 # `-d ` run detached, i.e. no console output will be shown in main console \
 # `--restart unless-stopped ` restart always, unless the customer specifically stopped it \
 # `-p 80:8080` map port 80 to container's port 8080 \
