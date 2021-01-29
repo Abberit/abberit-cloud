@@ -17,20 +17,12 @@ Follow official Docker instructions to [install Docker Engine](https://docs.dock
 ### Step 2. Install Abberit Admin Panel
 
 === "Debian 9+"
-    Set two environment variables for user and password to Abberit Admin Panel:
-    
-    ``` bash
-    set ABBERITUSER=YOUR_USER
-    ```
+    Download installation script into local file, inspect its content and then execute it. It will prompt for username and password to login into Abberit Admin Panel later:
 
     ``` bash
-    set ABBERITPASSWORD=YOUR_PASSWORD
-    ```
-
-    Download installation script into local file, inspect its content and then execute it:
-
-    ``` bash
-    curl -fsSL https://raw.githubusercontent.com/Abberit/abberit-cloud/master/scripts/abberit.install.sh -o abberit.install.sh
+    curl -fsSL \
+      https://raw.githubusercontent.com/Abberit/abberit-cloud/master/scripts/abberit.install.sh \
+      -o abberit.install.sh
     ```
 
     ``` bash
@@ -38,21 +30,12 @@ Follow official Docker instructions to [install Docker Engine](https://docs.dock
     ```
 
 === "Ubuntu 18+"
-    Set two environment variables for user and password to Abberit Admin Panel:
-    
-    ``` bash
-    set ABBERITUSER=YOUR_USER
-    ```
+    Download installation script into local file, inspect its content and then execute it. It will prompt for username and password to login into Abberit Admin Panel later:
 
     ``` bash
-    set ABBERITPASSWORD=YOUR_PASSWORD
-    ```
-
-    Download installation script into local file, inspect its content and then execute it:
-
-
-    ``` bash
-    curl -fsSL https://raw.githubusercontent.com/Abberit/abberit-cloud/master/scripts/abberit.install.sh -o abberit.install.sh
+    curl -fsSL \
+      https://raw.githubusercontent.com/Abberit/abberit-cloud/master/scripts/abberit.install.sh \
+      -o abberit.install.sh
     ```
 
     ``` bash

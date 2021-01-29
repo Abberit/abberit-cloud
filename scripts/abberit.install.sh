@@ -1,17 +1,5 @@
 #!/bin/bash
 
-if [[ "$ABBERITUSER" == "" ]]
-then
-  echo 'Error: ABBERITUSER environment variable was not set, exiting'
-  exit 1
-fi
-
-if [[ "$ABBERITPASSWORD" == "" ]]
-then
-  echo 'Error: ABBERITPASSWORD environment variable was not set, exiting'
-  exit 1
-fi
-
 echo 'Checking docker is installed'
 docker -v
 if [[ "$?" != "0" ]]
@@ -19,6 +7,12 @@ then
   echo 'Error: not found docker installed, exiting'
   exit 1
 fi
+
+echo 'Please enter username for Abberit Admin Panel:'
+read ABBERITUSER
+
+echo 'Please enter password for Abberit Admin Panel:'
+read ABBERITPASSWORD
 
 ## configure docker to run as daemon
 sudo systemctl enable docker
