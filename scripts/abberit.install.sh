@@ -9,10 +9,10 @@ then
 fi
 
 echo 'Please enter username for Abberit Admin Panel:'
-read ABBERITUSER
+read -p 'Username: ' ABBERITUSER
 
 echo 'Please enter password for Abberit Admin Panel:'
-read ABBERITPASSWORD
+read -sp 'Password: ' ABBERITPASSWORD
 
 ## configure docker to run as daemon
 sudo systemctl enable docker
@@ -78,4 +78,6 @@ curl --user "$ABBERITUSER:$ABBERITPASSWORD" --request POST --url http://localhos
 curl --user "$ABBERITUSER:$ABBERITPASSWORD" --request POST --url http://localhost:8081/api/webapp/start/defaultNodeApp \
      --max-time 60
 
-echo "Installation complete!"
+echo ""
+echo ""
+echo "Installation complete! Your Abberit Admin Panel is available at http://$vmIP:8081"
