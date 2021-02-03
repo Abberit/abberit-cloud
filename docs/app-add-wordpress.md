@@ -20,5 +20,5 @@
 2. [Configure https:// access to your website](app-https.md)
 
 ## Additional Guides:
-1. [Ssl certificate guides](https://www.linode.com/docs/guides/security/ssl/){target=_blank}
+1. [SSL certificate guides](https://www.linode.com/docs/guides/security/ssl/){target=_blank}
 2. [Installing certbot](https://www.linode.com/docs/guides/how-to-install-certbot-on-ubuntu-18-04/){target=_blank}
