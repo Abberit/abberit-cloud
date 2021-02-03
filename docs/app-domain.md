@@ -13,4 +13,5 @@
 ```
 
 ## Next steps
-* [Creating wordpress app](app-add-wordpress.md)
+* [Setting up https](app-https.md)
+* [Creating WordPress app](app-add-wordpress.md)
