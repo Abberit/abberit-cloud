@@ -1,6 +1,7 @@
 # WordPress Migration
 
 WordPress migration is easy with Abberit.
+
 1. One-click create [new WordPress](app-add-wordpress.md) instance
 2. Navigate to your old WordPress admin page.
   * Choose `Tools`->`Export`
