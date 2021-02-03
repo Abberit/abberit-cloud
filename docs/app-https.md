@@ -8,8 +8,8 @@ If you don't have the domain name registered, which resolves to your host IP, fo
 
 *Step 2*. Execute docker image of certbot:
 
-!!! note
-    If you use `1: Spin up a temporary webserver (standalone)` certbot option - then make sure that your webapp is stopped, and not using ports 80 and 443 before running the docker run command
+!!! hint
+    If you use `1: Spin up a temporary webserver (standalone)` certbot option - then make sure that your webapp is stopped, and not using ports 80 and 443 before running certbot.
 ```bash
 docker run -it --rm --name certbot \
       -p 80:80 -p 443:443 \
@@ -34,8 +34,8 @@ To setup the https connection to the app, follow these steps:
 2. Specify `Domain name` to exact same name as used in certificate provisioning step
 3. Click `Advanced` and in advanced settings specify `Application https port on the host` (typically - 443)
 4. Once https port is specified, the settings to specify the path to the SSL certificate and to the key will be displayed. Enter following values:
-  a. `Certificate public key path`: `/ab/sites/certs/<your domain name>/cert.pem`
-  b. `Certificate private key path`: `/ab/sites/certs/<your domain name>/privkey.pem`
+    * `Certificate public key path`: `/ab/sites/certs/<your domain name>/cert.pem`
+    * `Certificate private key path`: `/ab/sites/certs/<your domain name>/privkey.pem`
 5. Click `Add` and the app with https settings will be shortly created
 
 
