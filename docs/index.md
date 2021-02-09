@@ -6,15 +6,18 @@ To install Abberit Admin Panel on your Linux server you could follow automated i
 
 Currently automated installation is supported on Linode Linux servers.
 
-Navigate to [Abberit StackScript on Linode](https://cloud.linode.com/stackscripts/745522), click the button "Deploy New Linode" and follow UX prompts to install Abberit Admin Panel automatically.
+Navigate to [Abberit StackScript on Linode](https://cloud.linode.com/stackscripts/745522){target=_blank}, click the button "Deploy New Linode" and follow UX prompts to install Abberit Admin Panel automatically.
 
 ## Manual installation
 
 ### Step 1. Install Docker
 
-Follow official Docker instructions to [install Docker Engine](https://docs.docker.com/engine/install/) on your server.
+Follow official Docker instructions to [install Docker Engine](https://docs.docker.com/engine/install/){target=_blank} on your server.
 
 ### Step 2. Install Abberit Admin Panel
+
+!!! important
+    All the instructions below must be executed under `root` user.
 
 === "Debian 9+"
     Download installation script into local file and inspect its content.
