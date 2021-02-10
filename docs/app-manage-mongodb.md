@@ -17,9 +17,9 @@ When public port was configured to access MongoDB outside of the server or clust
 
 ![mongodb hosting env](./img/hosting-env-mongodb.png)
 
-## Env Varaibles
+## App Settings
 
-`Env Varaibles` can be accessed by clicking on `settings` link on `App list` view on the application card or by clicking on `App Settings` tab in `App details` view.
+`App Settings` can be accessed by clicking on `settings` link on `App list` view on the application card or by clicking on `App Settings` tab in `App details` view.
 
 This tab allows to manage environment variables which define the behavior of MongoDB database.
 
