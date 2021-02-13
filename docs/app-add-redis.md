@@ -9,7 +9,7 @@
     * `Redis port on the host` - set if you would like access Redis outside of your server or cluster
     * `Redis password` - if Redis is shared outside of your server or cluster, we recommend to set the password (applied to Redis as command line argument `--requirepass`)
     ![add redis](img/add-redis.png)
-7. Click `Add` to create the Node.js app.
+7. Click `Add` to deploy Redis.
 
 ## Next steps
 
