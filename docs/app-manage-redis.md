@@ -32,4 +32,4 @@ This tab allows to manage environment variables which define the behavior of Mon
 ![redis terminal](./img/redis-terminal.png)
 
 ## Additional Guides:
-1. [Redis CLI](https://redis.io/topics/rediscli){target=_blank}
+1. [:material-launch: Redis CLI](https://redis.io/topics/rediscli){target=_blank}

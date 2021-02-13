@@ -37,5 +37,5 @@ Application Terminal can be accessed by clicking on `Terminal` tab in `App Detai
 2. [Configure https:// access to your website](app-https.md)
 
 ## Additional Guides:
-1. [SSL certificate guides](https://www.linode.com/docs/guides/security/ssl/){target=_blank}
-2. [Installing certbot](https://www.linode.com/docs/guides/how-to-install-certbot-on-ubuntu-18-04/){target=_blank}
+1. [:material-launch: SSL certificate guides](https://www.linode.com/docs/guides/security/ssl/){target=_blank}
+2. [:material-launch: Installing certbot](https://www.linode.com/docs/guides/how-to-install-certbot-on-ubuntu-18-04/){target=_blank}

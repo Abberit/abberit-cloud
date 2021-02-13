@@ -32,5 +32,5 @@ This tab allows to manage environment variables which define the behavior of Mon
 ![mongodb terminal](./img/mongodb-terminal.png)
 
 ## Additional Guides:
-1. [Mongo Shell](https://docs.mongodb.com/manual/mongo/){target=_blank}
-2. [MongoDB backups](https://docs.mongodb.com/manual/core/backups/){target=_blank}
+1. [:material-launch: Mongo Shell](https://docs.mongodb.com/manual/mongo/){target=_blank}
+2. [:material-launch: MongoDB backups](https://docs.mongodb.com/manual/core/backups/){target=_blank}
