@@ -11,7 +11,7 @@
     * `MongoDB password` - if MongoDB is shared outside of your server or cluster, we recommend to set the password (applied to MongoDB as `MONGO_INITDB_ROOT_PASSWORD`)
     ![add mongodb](img/app-add-mongodb.png)
 7. Make sure you accept terms of the [license for self-hosting MongoDB](https://www.mongodb.com/community/licensing){target=_blank} on your server.
-8. Click `Add` to create the Node.js app.
+8. Click `Add` to create the MongoDB database.
 
 ## Next steps
 

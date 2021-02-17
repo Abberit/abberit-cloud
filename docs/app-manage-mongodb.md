@@ -27,7 +27,7 @@ This tab allows to manage environment variables which define the behavior of Mon
 
 ## Terminal
 
-`Terminal` can be accessed by clicking on `Terminal` tab in `App Details` view. It is `bash` terminal to OS hosting your Node.js application. From it you can accesss `mongo` and other MongoDB and Ubuntu utilities.
+`Terminal` can be accessed by clicking on `Terminal` tab in `App Details` view. It is `bash` terminal to OS hosting your MongoDB database. From it you can accesss `mongo` and other MongoDB and Ubuntu utilities.
 
 ![mongodb terminal](./img/mongodb-terminal.png)
 
