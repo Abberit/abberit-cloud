@@ -1,4 +1,4 @@
-# Wordpress setup
+# WordPress setup
 
 1. [Install](index.md) Abberit panel if not already installed
 2. Navigate to Abberit admin panel: `http://<your vm ip>:8081/`
@@ -14,7 +14,7 @@
     * `New MySQL instance name` - the unique app name for the new mysql instance
     * `MySQL app name to connect to` - specify mysql instance app name if you'd like to re-use existing instance
     * `Start wordpress app after create` - leave toggle on if you'd like to see the newly created app be automatically started after creation
-6. Click `Add` to create the Wordpress website.
+6. Click `Add` to create the WordPress website.
 
 ## Next steps
 1. [Configure domain name for your application](app-domain.md)
