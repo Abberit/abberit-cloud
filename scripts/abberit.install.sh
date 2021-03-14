@@ -28,7 +28,7 @@ sudo htpasswd -b -c /etc/abberit/.htpasswd $ABBERITUSER $ABBERITPASSWORD
 ## common network for all services:
 docker network create abnet
 
-docker pull abberit/ab-dev:1.0.1
+docker pull abberit/ab-dev:1.0.2
 docker run \
   -d \
   --restart unless-stopped \
@@ -37,7 +37,7 @@ docker run \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v /ab/sites/:/ab/sites \
   -v /etc/abberit/.htpasswd:/etc/abberit/.htpasswd \
-  abberit/ab-dev:1.0.1
+  abberit/ab-dev:1.0.2
 # `-d ` run detached, i.e. no console output will be shown in main console \
 # `--restart unless-stopped ` restart always, unless the customer specifically stopped it \
 # `-p 80:8080` map port 80 to container's port 8080 \
